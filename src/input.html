@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<title>Swiftly</title>
+<body class="bg-amber-100">
+  <div class="container">
+
+    <h1 class="text-2xl font-bold md:text-center  text-blue-600 mb-4">
+      Fast. Reliable. Stress-Free
+    </h1>
+    <p class="text-blue-300 text-md md:text-center mb-8">Order via whatsapp and get it delivered to your door step</p>
+    <!-- top-icon -->
+     <div class="bg-blue-100 flex md:justify-center"> 
+      <div class="rounded-2xl ml-4 flex md:w-[60%] justify-center">
+        <div class="bg-white w-[30%]">
+          <img src="\icons\delivery.jpeg" alt="delivery icon" class="w-[70%]">
+<p class="text-sm text-center">   We deliver</p>
+        </div>
+
+  <div class="bg-white w-[30%] ml-3">
+          <img src="\icons\whatsapp.jpeg" alt="delivery icon" class="w-[70%]">
+<p class="text-sm text-center">whatsapp</p>
+        </div>
+
+        <div class="bg-white w-[30%] ml-2">
+          <img src="\icons\gift.jpeg" alt="delivery icon" class="w-[120%]">
+<p class="text-sm text-center">product</p>
+        </div>
+      </div>
+    </div>
+    <div class="border mt-8 mx-auto bg-white ">
+<h1 class="font-bold md:text-center  text-2xl ml-20">Find a Gift</h1>
+<p class="ml-18 md:text-center">Who are you gifting</p>
+<div class="border border-1 md:mx-auto justify-center md:w-[50%] rounded-2xl gap-20 w-[70%] ml-12 flex">
+  <span class="ml-6 cursor-pointer" id="male">Male</span>
+  <span class="cursor-pointer" id="female">Female</span>
+</div>
+<div class="border border-1 justify-center md:mx-auto md:w-[50%] rounded-2xl mt-2 gap-20 w-[70%] ml-12 flex">
+  <span class="ml-6 cursor-pointer" id="adult">Adult</span>
+  <span class="cursor-pointer" id="child">Child</span>
+</div>
+<span class="ml-4 md:ml-24">Ocassion:</span>
+<div class="border border-1 justify-center md:mx-auto md:w-[70%] rounded-2xl mt-2 gap-2 w-[90%] ml-4 flex">
+
+  <span class="ml-6 cursor-pointer" id="birthday">Birthday</span>
+  <span class="cursor-pointer" id="anniversary">Anniversary</span>
+  <span class="cursor-pointer" id="random">Random</span>
+
+</div>
+
+<button class="border md:justify-center md:ml-[45%] border-none 
+rounded-2xl bg-green-500 p-1.5 mt-6 ml-28 mb-2 " id="giftbtn">Pick Gift</button>
+
+<p id="gift"></p>
+
+    </div>
+<!-- search bar -->
+    <div class="justify-center flex items-center" >
+<input type="text" class="border rounded-2xl mt-4 bg-gray-300 
+text-black w-[70%] p-1 border-gray-200 " 
+placeholder="Search for products here" class="bg-amber-100">
+    </div>
+
+    <!-- category section -->
+     <div class="mt-4 sm:gap-4 justify-center bg-blue-200">
+      <button class="rounded-2xl p-2 hover:bg-green-500 bg-gray-200" id="anime">Anime</button>
+      <button class="rounded-2xl p-2 hover:bg-green-500 bg-gray-200" id="snacks">Snacks</button>
+      <button class="rounded-2xl p-2 hover:bg-green-500 bg-gray-200" id="cosmetics">Cosmetics</button>
+      <button class="rounded-2xl p-2 hover:bg-green-500 bg-gray-200" id="native">Native</button>
+      
+      
+      
+    </div>
+    <div id="image-sec"></div>
+
+
+
+
+
+
+
+  </div>
+  <script type="module" src="input.js"></script>
+</body>
+</html>

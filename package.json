@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.421"
+  },
+  
+  "scripts": {
+    "tailwind:build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  }
+
+}
