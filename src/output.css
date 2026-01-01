@@ -245,6 +245,9 @@
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
   .size-\[70\%\] {
     width: 70%;
     height: 70%;
@@ -265,8 +268,14 @@
   .w-\[120\%\] {
     width: 120%;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .items-center {
     align-items: center;
@@ -349,28 +358,23 @@
   .text-blue-600 {
     color: var(--color-blue-600);
   }
-  .placeholder\:mx-auto {
-    &::placeholder {
-      margin-inline: auto;
-    }
+  .underline {
+    text-decoration-line: underline;
   }
-  .placeholder\:placeholder\:mx-auto {
-    &::placeholder {
-      &::placeholder {
-        margin-inline: auto;
-      }
-    }
-  }
-  .placeholder\:justify-center {
-    &::placeholder {
-      justify-content: center;
-    }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .hover\:bg-green-500 {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-green-500);
       }
+    }
+  }
+  .sm\:ml-4 {
+    @media (width >= 300px) {
+      margin-left: calc(var(--spacing) * 4);
     }
   }
   .sm\:gap-4 {
@@ -383,9 +387,34 @@
       margin-inline: auto;
     }
   }
-  .md\:ml-24 {
+  .md\:ml-0 {
     @media (width >= 500px) {
-      margin-left: calc(var(--spacing) * 24);
+      margin-left: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:ml-32 {
+    @media (width >= 500px) {
+      margin-left: calc(var(--spacing) * 32);
+    }
+  }
+  .md\:ml-40 {
+    @media (width >= 500px) {
+      margin-left: calc(var(--spacing) * 40);
+    }
+  }
+  .md\:w-\[0\%\] {
+    @media (width >= 500px) {
+      width: 0%;
+    }
+  }
+  .md\:w-\[30\%\] {
+    @media (width >= 500px) {
+      width: 30%;
+    }
+  }
+  .md\:w-\[40\%\] {
+    @media (width >= 500px) {
+      width: 40%;
     }
   }
   .md\:w-\[50\%\] {
@@ -473,6 +502,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -543,6 +577,7 @@
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
