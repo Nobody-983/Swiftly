@@ -17,7 +17,9 @@ let imageSec = document.getElementById("image-sec")
 let native = document.getElementById("native")
 let cosmetics = document.getElementById("cosmetics")
 let snacks = document.getElementById("snacks")
-let anime = document.getElementById("anime")    
+let anime = document.getElementById("anime") 
+let all = document.getElementById("all")    
+
 
 
 
@@ -90,6 +92,8 @@ cosmetics.addEventListener("click", () => {
     anime.style.color = "black"
     snacks.style.color = "black"
     native.style.color = "black"
+    all.style.color = "black"
+
     imageSec.classList.add("img")
 
 
@@ -105,7 +109,7 @@ cosmetics.addEventListener("click", () => {
         let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
-         image.classList.add("w-[30%]")
+         image.classList.add("w-[90%]")
      })
 
     
@@ -117,6 +121,7 @@ native.addEventListener("click", () => {
     anime.style.color = "black"
     snacks.style.color = "black"
     cosmetics.style.color = "black"
+    all.style.color = "black"
     imageSec.classList.add("img")
 
 
@@ -132,7 +137,35 @@ native.addEventListener("click", () => {
         let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
-         image.classList.add("w-[30%]")
+         image.classList.add("w-[90%]")
+     })
+
+    
+})
+
+// native sec
+snacks.addEventListener("click", () => {
+    native.style.color = "green"
+    anime.style.color = "black"
+    snacks.style.color = "black"
+    cosmetics.style.color = "black"
+    all.style.color = "black"
+    imageSec.classList.add("img")
+
+
+
+
+    
+    imageSec.innerHTML = ""
+    let snack = images.filter((el) => {
+        
+       return el.category === "snack"
+    })
+    snack.forEach((el) => {
+        let image = document.createElement("img") 
+        imageSec.appendChild(image)
+        image.src = el.src
+         image.classList.add("w-[90%]")
      })
 
     

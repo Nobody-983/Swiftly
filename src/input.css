@@ -12,7 +12,7 @@
     }
     /* image sec */
     .img{
-        @apply flex gap-10 h-40 w-[70%] mx-auto m-8
+        @apply grid grid-cols-4 gap-3 w-[90%] mx-auto m-8
     }
 
 }
