@@ -248,6 +248,14 @@
   .flex {
     display: flex;
   }
+  .size-\[70\%\] {
+    width: 70%;
+    height: 70%;
+  }
+  .size-\[80\%\] {
+    width: 80%;
+    height: 80%;
+  }
   .w-\[30\%\] {
     width: 30%;
   }
@@ -425,6 +433,9 @@
     width: 90%;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: calc(var(--spacing) * 3);
+  }
+  .all {
+    background-color: var(--color-gray-200);
   }
 }
 @property --tw-border-style {

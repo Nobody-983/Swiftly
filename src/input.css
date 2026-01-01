@@ -14,6 +14,9 @@
     .img{
         @apply grid grid-cols-4 gap-3 w-[90%] mx-auto m-8
     }
+    .all{
+        @apply bg-gray-200
+    }
 
 }
     /* break points for medium screens */

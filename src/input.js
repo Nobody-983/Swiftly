@@ -79,12 +79,74 @@ giftBtn.addEventListener("click", () => {
     // female adult and birthday
     if (female.style.color === "green"
         && adult.style.color === "green"
-        && birthday.style.color === "green") {
-        gift.textContent = "Cosmetics"
+        && birthday.style.color === "green")
+    {
+        imageSec.innerHTML = ""
+        all.style.color = "black"
+
+        
+    let cosmetic = images.filter((el) => {
+        
+       return el.category === "cosmetics" || el.category==="snack"
+    })
+    cosmetic.forEach((el) => {
+        let image = document.createElement("img") 
+        imageSec.appendChild(image)
+        image.src = el.src
+         image.classList.add("size-[70%]")
+     })
+            
     }
     
     
 })
+
+// categories
+
+// all category
+    all.style.color = "green"
+let allImage = images.filter((el) => {
+    return el.src
+})
+imageSec.innerHTML =""
+allImage.map((el) => {
+    imageSec.classList.add("img")
+    let image = document.createElement("img") 
+        imageSec.appendChild(image)
+        image.src = el.src
+         image.classList.add("size-[70%]")
+})
+
+// all sec
+all.addEventListener("click", () => {
+    cosmetics.style.color = "black"
+    anime.style.color = "black"
+    snacks.style.color = "black"
+    native.style.color = "black"
+    all.style.color = "green"
+
+    imageSec.classList.add("img")
+
+
+
+
+    
+    imageSec.innerHTML = ""
+    let allsec = images.filter((el) => {
+        
+       return el
+    })
+    allsec.forEach((el) => {
+        let image = document.createElement("img") 
+        imageSec.appendChild(image)
+        image.src = el.src
+         image.classList.add("size-[70%]")
+     })
+
+    
+})
+
+
 
 // Cosmetics sec
 cosmetics.addEventListener("click", () => {
@@ -109,7 +171,7 @@ cosmetics.addEventListener("click", () => {
         let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
-         image.classList.add("w-[90%]")
+         image.classList.add("size-[70%]")
      })
 
     
@@ -137,19 +199,20 @@ native.addEventListener("click", () => {
         let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
-         image.classList.add("w-[90%]")
+         image.classList.add("size-[70%]")
      })
 
     
 })
 
-// native sec
+// snacks
 snacks.addEventListener("click", () => {
-    native.style.color = "green"
+    native.style.color = "black"
     anime.style.color = "black"
-    snacks.style.color = "black"
+    snacks.style.color = "green"
     cosmetics.style.color = "black"
     all.style.color = "black"
+    
     imageSec.classList.add("img")
 
 
@@ -165,7 +228,7 @@ snacks.addEventListener("click", () => {
         let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
-         image.classList.add("w-[90%]")
+         image.classList.add("size-[80%]")
      })
 
     
