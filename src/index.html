@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <script type="module" src="input.js"></script>
 </head>
 <title>Swiftly</title>
 <body class="bg-amber-100">
@@ -51,18 +52,21 @@
   <span class="cursor-pointer" id="random">Random</span>
 
 </div>
+<div class="mx-auto justify-center text-center">
 
-<button class="border md:justify-center md:ml-[45%] border-none 
-rounded-2xl bg-green-500 p-1.5 mt-6 ml-28 mb-2 " id="giftbtn">Pick Gift</button>
+  <button class="border border-none
+  rounded-2xl bg-green-500 p-2 mt-6 mb-2" id="giftbtn">Pick Gift</button>
+</div>
 
 <p id="gift"></p>
 
     </div>
 <!-- search bar -->
     <div class="justify-center flex items-center" >
-<input type="text" class="border rounded-2xl mt-4 bg-gray-300 
-text-black w-[70%] p-1 border-gray-200 " 
-placeholder="Search for products here" class="bg-amber-100">
+<input type="text" id="input" 
+class="border rounded-2xl mt-4 bg-gray-300 
+text-black w-[70%] p-1 border-gray-200 placeholder: placeholder" 
+placeholder="Search for products here" />
     </div>
 
     <!-- category section -->
@@ -87,6 +91,5 @@ placeholder="Search for products here" class="bg-amber-100">
 
 
   </div>
-  <script type="module" src="input.js"></script>
 </body>
 </html>

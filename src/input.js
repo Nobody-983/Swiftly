@@ -1,6 +1,12 @@
-import {images} from './images.js'
+import { images } from './images.js'
+import anim from './categories.js'
 
-
+requestAnimationFrame(() => {
+    
+    anim()
+})
+// input sec
+let input = document.getElementById("input")
 // gift
 let male = document.getElementById("male")
 let female = document.getElementById("female")
@@ -12,15 +18,10 @@ let anniversary = document.getElementById("anniversary")
 let gift = document.getElementById("gift")
 let giftBtn = document.getElementById("giftbtn")
 
-// category
+
+
+
 let imageSec = document.getElementById("image-sec")    
-let native = document.getElementById("native")
-let cosmetics = document.getElementById("cosmetics")
-let snacks = document.getElementById("snacks")
-let anime = document.getElementById("anime") 
-let all = document.getElementById("all")    
-
-
 
 
 // male color
@@ -73,8 +74,26 @@ giftBtn.addEventListener("click", () => {
     // male adult and birthday
     if (male.style.color === "green"
         && adult.style.color === "green"
-        && birthday.style.color === "green") {
-        gift.textContent = "Costume"
+        && birthday.style.color === "green")
+    {
+        imageSec.innerHTML = ""
+        all.style.color = "black"
+        cosmetics.style.color = "black"
+        anime.style.color = "black"
+        snacks.style.color = "black"
+        native.style.color = "black"
+    
+    let men = images.filter((el) => {
+       return el.category === "Anime" || el.category==="Native"
+    })
+        
+    men.forEach((el) => {
+        let image = document.createElement("img") 
+        imageSec.appendChild(image)
+        image.src = el.src
+         image.classList.add("ace")
+         image.classList.add("size-[70%]")
+     })
     }
     // female adult and birthday
     if (female.style.color === "green"
@@ -83,153 +102,40 @@ giftBtn.addEventListener("click", () => {
     {
         imageSec.innerHTML = ""
         all.style.color = "black"
+        cosmetics.style.color = "black"
+        anime.style.color = "black"
+        snacks.style.color = "black"
+        native.style.color = "black"
+    
 
         
-    let cosmetic = images.filter((el) => {
-        
+    let women = images.filter((el) => {
        return el.category === "cosmetics" || el.category==="snack"
     })
-    cosmetic.forEach((el) => {
+        
+    women.forEach((el) => {
         let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
+         image.classList.add("ace")
          image.classList.add("size-[70%]")
-     })
-            
+     })       
     }
-    
-    
 })
 
-// categories
-
-// all category
-    all.style.color = "green"
-let allImage = images.filter((el) => {
-    return el.src
-})
-imageSec.innerHTML =""
-allImage.map((el) => {
-    imageSec.classList.add("img")
-    let image = document.createElement("img") 
-        imageSec.appendChild(image)
-        image.src = el.src
-         image.classList.add("size-[70%]")
-})
-
-// all sec
-all.addEventListener("click", () => {
-    cosmetics.style.color = "black"
-    anime.style.color = "black"
-    snacks.style.color = "black"
-    native.style.color = "black"
-    all.style.color = "green"
-
-    imageSec.classList.add("img")
-
-
-
-
-    
+// Filter
+input.addEventListener("input", (el) => {
+    let inputVal = input.value
+    console.log(inputVal);
     imageSec.innerHTML = ""
-    let allsec = images.filter((el) => {
-        
-       return el
+    let inp = images.filter((el) => {    
+    return console.log(inputVal === el.alt);
     })
-    allsec.forEach((el) => {
+    inp.forEach((el) => {
         let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
          image.classList.add("size-[70%]")
+         image.classList.add("ace")
      })
-
-    
-})
-
-
-
-// Cosmetics sec
-cosmetics.addEventListener("click", () => {
-    cosmetics.style.color = "green"
-    anime.style.color = "black"
-    snacks.style.color = "black"
-    native.style.color = "black"
-    all.style.color = "black"
-
-    imageSec.classList.add("img")
-
-
-
-
-    
-    imageSec.innerHTML = ""
-    let cosmetic = images.filter((el) => {
-        
-       return el.category === "cosmetics"
-    })
-    cosmetic.forEach((el) => {
-        let image = document.createElement("img") 
-        imageSec.appendChild(image)
-        image.src = el.src
-         image.classList.add("size-[70%]")
-     })
-
-    
-})
-
-// native sec
-native.addEventListener("click", () => {
-    native.style.color = "green"
-    anime.style.color = "black"
-    snacks.style.color = "black"
-    cosmetics.style.color = "black"
-    all.style.color = "black"
-    imageSec.classList.add("img")
-
-
-
-
-    
-    imageSec.innerHTML = ""
-    let nativeSec = images.filter((el) => {
-        
-       return el.category === "Native"
-    })
-    nativeSec.forEach((el) => {
-        let image = document.createElement("img") 
-        imageSec.appendChild(image)
-        image.src = el.src
-         image.classList.add("size-[70%]")
-     })
-
-    
-})
-
-// snacks
-snacks.addEventListener("click", () => {
-    native.style.color = "black"
-    anime.style.color = "black"
-    snacks.style.color = "green"
-    cosmetics.style.color = "black"
-    all.style.color = "black"
-    
-    imageSec.classList.add("img")
-
-
-
-
-    
-    imageSec.innerHTML = ""
-    let snack = images.filter((el) => {
-        
-       return el.category === "snack"
-    })
-    snack.forEach((el) => {
-        let image = document.createElement("img") 
-        imageSec.appendChild(image)
-        image.src = el.src
-         image.classList.add("size-[80%]")
-     })
-
-    
 })
