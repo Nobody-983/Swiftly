@@ -21,6 +21,7 @@ allImage.map((el) => {
         image.src = el.src
         image.classList.add("button")
         image.classList.add("ace")
+        image.classList.add("test")
         image.classList.add("size-[70%]")
 })
 
@@ -43,6 +44,7 @@ all.addEventListener("click", () => {
         image.src = el.src
         image.classList.add("ace")
         image.classList.add("button")
+        image.classList.add("test")
          image.classList.add("size-[70%]")
      })
 })
@@ -67,6 +69,7 @@ cosmetics.addEventListener("click", () => {
         image.src = el.src
         image.classList.add("button")
         image.classList.add("ace")
+        image.classList.add("test")
         image.classList.add("size-[70%]")
      })
 })
@@ -91,6 +94,7 @@ native.addEventListener("click", () => {
         image.src = el.src
         image.classList.add("ace")
         image.classList.add("size-[70%]")
+        image.classList.add("test")
         image.classList.add("button")
      })  
 })
@@ -116,6 +120,7 @@ snacks.addEventListener("click", () => {
         image.classList.add("button")
         image.classList.add("ace")
         image.classList.add("size-[80%]")
+        image.classList.add("test")
      })
 })
 
@@ -139,6 +144,7 @@ function anim() {
             image.src = el.src
             image.classList.add("button")
             image.classList.add("size-[70%]")
+            image.classList.add("test")
             image.classList.add("ace")
          })
     })

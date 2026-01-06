@@ -7,28 +7,27 @@
   <script type="module" src="input.js"></script>
 </head>
 <title>Swiftly</title>
-<body class="bg-blue-400">
+<body class="bg-blue-400  duration-300">
   <div class="container">
-
     <h1 class="text-2xl font-bold md:text-center  text-blue-600 mb-4">
       Fast. Reliable. Stress-Free
     </h1>
     <p class="text-blue-300 text-md md:text-center mb-8">Order via whatsapp and get it delivered to your door step</p>
     <!-- top-icon -->
-     <div class="bg-blue-100 flex md:justify-center"> 
-      <div class="rounded-2xl ml-4 flex md:w-[60%] justify-center">
+     <div class="bg-blue-100 flex justify-center"> 
+      <div class="rounded-2xl flex md:w-[60%] justify-center">
         <div class="bg-white w-[30%]">
-          <img src="icons\delivery.jpeg" alt="delivery icon" class="w-[70%]">
+          <img src="icons\delivery.jpeg" alt="delivery icon" class="w-[70%]  mx-auto">
 <p class="text-sm text-center">   We deliver</p>
         </div>
 
   <div class="bg-white w-[30%] ml-3">
-          <img src="icons\whatsapp.jpeg" alt="delivery icon" class="w-[70%]">
+          <img src="icons\whatsapp.jpeg" alt="delivery icon" class="w-[70%] mx-auto">
 <p class="text-sm text-center">whatsapp</p>
         </div>
 
         <div class="bg-white w-[30%] ml-2">
-          <img src="icons\gift.jpeg" alt="delivery icon" class="w-[120%]">
+          <img src="icons\gift.jpeg" alt="delivery icon" class="w-[120%] mx-auto">
 <p class="text-sm text-center">product</p>
         </div>
       </div>
@@ -37,25 +36,29 @@
 <h1 class="font-bold text-center  text-2xl ">Find a Gift</h1>
 <p class="text-center">Who are you gifting</p>
 <div class="button mx-auto justify-center md:w-[40%] rounded-2xl gap-20 w-[70%] flex">
-  <span class="text-center cursor-pointer" id="male">Male</span>
-  <span class="text-center cursor-pointer" id="female">Female</span>
+  <span class="text-center cursor-pointer hover:bg-green-500" id="male">Male</span>
+  <span class="text-center cursor-pointer hover:bg-green-500" id="female">Female</span>
 </div>
 <div class="button justify-center mx-auto md:w-[50%] rounded-2xl mt-4 gap-20 w-[70%] flex">
-  <span class="text-center cursor-pointer" id="adult">Adult</span>
-  <span class="text-center cursor-pointer" id="child">Child</span>
+  <span class="text-center cursor-pointer hover:bg-green-500" id="adult">Adult</span>
+  <span class="text-center cursor-pointer hover:bg-green-500" id="child">Child</span>
 </div>
 <span class="sm:ml-4 md:ml-40 md:text-center md:justify-center md:mx-auto">Ocassion:</span>
 <div class="button justify-center mx-auto md:w-[60%] rounded-2xl mt-2 gap-2 w-[90%] flex">
 
-  <span class="text-center cursor-pointer" id="birthday">Birthday</span>
-  <span class="text-center cursor-pointer" id="anniversary">Anniversary</span>
-  <span class="text-center cursor-pointer" id="random">Random</span>
+  <span class="text-center cursor-pointer hover:bg-green-500" id="birthday">Birthday</span>
+  <span class="text-center cursor-pointer hover:bg-green-500" id="anniversary">Anniversary</span>
+  <span class="text-center cursor-pointer hover:bg-green-500" id="random">Random</span>
 
 </div>
 <div class="mx-auto justify-center text-center">
 
-  <button class="border border-none
-  rounded-2xl bg-green-500 p-2 mt-6 mb-2" id="giftbtn">Pick Gift</button>
+<button class="px-4 py-2 rounded-full bg-primary bg-green-700 mt-2 mb-2 shadow-sm 
+transition-colors transition-transform duration-200 ease-[cubic-bezier(.25,.8,.25,1)] 
+hover:bg-primary-600 hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/30 
+motion-safe:transform motion-safe:transition" id="giftbtn">
+  Pick Gift
+</button>
 </div>
 
 <p id="gift"></p>
@@ -71,17 +74,17 @@ placeholder="Search for products here" />
 
     <!-- category section -->
      <div class="mt-4 sm:gap-4  md:text-center bg-blue-200">
-       <button class="rounded-2xl p-2 hover:bg-green-500 bg-gray-200" id="all">All</button>
-      <button class="rounded-2xl p-2 hover:bg-green-500 bg-gray-200" id="anime">Anime</button>
-      <button class="rounded-2xl p-2 hover:bg-green-500 bg-gray-200" id="snacks">Snacks</button>
-      <button class="rounded-2xl p-2 hover:bg-green-500 bg-gray-200" id="cosmetics">Cosmetics</button>
-      <button class="rounded-2xl p-2 hover:bg-green-500 bg-gray-200" id="native">Native</button>
+       <button class="rounded-2xl cursor-pointer p-2 hover:bg-green-500 bg-gray-200" id="all">All</button>
+      <button class="rounded-2xl cursor-pointer p-2 hover:bg-green-500 bg-gray-200" id="anime">Anime</button>
+      <button class="rounded-2xl cursor-pointer p-2 hover:bg-green-500 bg-gray-200" id="snacks">Snacks</button>
+      <button class="rounded-2xl cursor-pointer p-2 hover:bg-green-500 bg-gray-200" id="cosmetics">Cosmetics</button>
+      <button class="rounded-2xl cursor-pointer p-2 hover:bg-green-500 bg-gray-200" id="native">Native</button>
       
       
       
     </div>
     <div id="image-sec">
-      <img src="" alt="">
+      
     </div>
 
 

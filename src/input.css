@@ -12,17 +12,17 @@
     }
     /* image sec */
     .img{
-        @apply grid grid-cols-4 gap-3 w-[90%] mx-auto m-8
+        @apply grid grid-cols-4 gap-3 w-[90%] mx-auto mt-8
     }
     .ace{
-        @apply border hover:shadow hover:opacity-95 hover:scale-[90%] border-amber-300
+        @apply border border-3 hover:shadow hover:opacity-95 hover:scale-[90%] border-amber-300
     }
     .placeholder{
         @apply text-center justify-center mx-auto
     }
-    
-    
-
+    .test{
+        @apply transition-transform duration-150 ease-linear active:scale-95 object-cover
+    }
 }
     /* break points for medium screens */
 
