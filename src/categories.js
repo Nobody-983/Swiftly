@@ -19,8 +19,9 @@ allImage.map((el) => {
     let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
-         image.classList.add("ace")
-         image.classList.add("size-[70%]")
+        image.classList.add("button")
+        image.classList.add("ace")
+        image.classList.add("size-[70%]")
 })
 
 // all sec
@@ -31,16 +32,17 @@ all.addEventListener("click", () => {
     native.style.color = "black"
     all.style.color = "green"
     imageSec.classList.add("img")
-
+    
     imageSec.innerHTML = ""
     let allsec = images.filter((el) => {
-       return el
+        return el
     })
     allsec.forEach((el) => {
         let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
-         image.classList.add("ace")
+        image.classList.add("ace")
+        image.classList.add("button")
          image.classList.add("size-[70%]")
      })
 })
@@ -63,8 +65,9 @@ cosmetics.addEventListener("click", () => {
         let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
-         image.classList.add("ace")
-         image.classList.add("size-[70%]")
+        image.classList.add("button")
+        image.classList.add("ace")
+        image.classList.add("size-[70%]")
      })
 })
 
@@ -86,8 +89,9 @@ native.addEventListener("click", () => {
         let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
-         image.classList.add("ace")
-         image.classList.add("size-[70%]")
+        image.classList.add("ace")
+        image.classList.add("size-[70%]")
+        image.classList.add("button")
      })  
 })
 
@@ -109,8 +113,9 @@ snacks.addEventListener("click", () => {
         let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
-         image.classList.add("ace")
-         image.classList.add("size-[80%]")
+        image.classList.add("button")
+        image.classList.add("ace")
+        image.classList.add("size-[80%]")
      })
 })
 
@@ -132,8 +137,9 @@ function anim() {
             let image = document.createElement("img") 
             imageSec.appendChild(image)
             image.src = el.src
-             image.classList.add("size-[70%]")
-             image.classList.add("ace")
+            image.classList.add("button")
+            image.classList.add("size-[70%]")
+            image.classList.add("ace")
          })
     })
 }

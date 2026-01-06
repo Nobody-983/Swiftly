@@ -118,7 +118,9 @@ giftBtn.addEventListener("click", () => {
         imageSec.appendChild(image)
         image.src = el.src
          image.classList.add("ace")
-         image.classList.add("size-[70%]")
+        image.classList.add("size-[70%]")
+         image.classList.add("button")
+        
      })       
     }
 })
