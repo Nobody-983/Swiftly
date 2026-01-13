@@ -2,13 +2,13 @@
 
 @layer components{
     .dark{
-        @apply bg-gray-700 text-white font-light 
+        @apply bg-amber-700 text-white font-light 
     }
     .button{
         @apply border border-2 
     }
     .container{
-     @apply  mt-8 mx-auto bg-blue-100 min-w-[90%] 
+     @apply  mt-8 mx-auto bg-amber-100 min-w-[90%] 
     }
     /* image sec */
     .img{
