@@ -91,8 +91,9 @@ giftBtn.addEventListener("click", () => {
         let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
-         image.classList.add("ace")
-         image.classList.add("size-[70%]")
+        image.classList.add("test")
+        image.classList.add("ace")
+        image.classList.add("size-[70%]")
      })
     }
     // female adult and birthday
@@ -107,8 +108,6 @@ giftBtn.addEventListener("click", () => {
         snacks.style.color = "black"
         native.style.color = "black"
     
-
-        
     let women = images.filter((el) => {
        return el.category === "cosmetics" || el.category==="snack"
     })
@@ -117,9 +116,10 @@ giftBtn.addEventListener("click", () => {
         let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
-         image.classList.add("ace")
+        image.classList.add("ace")
         image.classList.add("size-[70%]")
-         image.classList.add("button")
+        image.classList.add("test")
+        image.classList.add("button")
         
      })       
     }
@@ -137,7 +137,8 @@ input.addEventListener("input", (el) => {
         let image = document.createElement("img") 
         imageSec.appendChild(image)
         image.src = el.src
-         image.classList.add("size-[70%]")
-         image.classList.add("ace")
+        image.classList.add("test")
+        image.classList.add("size-[70%]")
+        image.classList.add("ace")
      })
 })
