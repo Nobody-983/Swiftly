@@ -26,45 +26,45 @@ let imageSec = document.getElementById("image-sec")
 
 // male color
 male.addEventListener("click", () => {
-    male.style.color = "green"
+    male.style.color = "gold"
     female.style.color = "black"
 })
 
 // female color
 female.addEventListener("click", () => {
-    female.style.color = "green"
+    female.style.color = "gold"
     male.style.color = "black"
 })
 
 //adult color
 adult.addEventListener("click", () => {
-    adult.style.color = "green"
+    adult.style.color = "gold"
     child.style.color = "black"
 })
 
 // child color
 child.addEventListener("click", () => {
-    child.style.color = "green"
+    child.style.color = "gold"
     adult.style.color = "black"
 })
 
 // birthday color
 birthday.addEventListener("click", () => {
-    birthday.style.color = "green"
+    birthday.style.color = "gold"
     anniversary.style.color = "black"
     random.style.color = "black"
 })
 
 // anniversary color
 anniversary.addEventListener("click", () => {
-    anniversary.style.color = "green"
+    anniversary.style.color = "gold"
     birthday.style.color = "black"
     random.style.color = "black"
 })
 
 // random
 random.addEventListener("click", () => {
-    random.style.color = "green"
+    random.style.color = "gold"
     anniversary.style.color = "black"
     birthday.style.color = "black"
 })
@@ -72,9 +72,9 @@ random.addEventListener("click", () => {
 // gift picker
 giftBtn.addEventListener("click", () => {
     // male adult and birthday
-    if (male.style.color === "green"
-        && adult.style.color === "green"
-        && birthday.style.color === "green")
+    if (male.style.color === "gold"
+        && adult.style.color === "gold"
+        && birthday.style.color === "gold")
     {
         imageSec.innerHTML = ""
         all.style.color = "black"
@@ -97,9 +97,9 @@ giftBtn.addEventListener("click", () => {
      })
     }
     // female adult and birthday
-    if (female.style.color === "green"
-        && adult.style.color === "green"
-        && birthday.style.color === "green")
+    if (female.style.color === "gold"
+        && adult.style.color === "gold"
+        && birthday.style.color === "gold")
     {
         imageSec.innerHTML = ""
         all.style.color = "black"

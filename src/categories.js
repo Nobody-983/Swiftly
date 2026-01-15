@@ -9,7 +9,7 @@ let all = document.getElementById("all")
 
 
 // all category
-    all.style.color = "green"
+    all.style.color = "gold"
 let allImage = images.filter((el) => {
     return el.src
 })
@@ -31,7 +31,7 @@ all.addEventListener("click", () => {
     anime.style.color = "black"
     snacks.style.color = "black"
     native.style.color = "black"
-    all.style.color = "green"
+    all.style.color = "gold"
     imageSec.classList.add("img")
     
     imageSec.innerHTML = ""
@@ -52,7 +52,7 @@ all.addEventListener("click", () => {
 
 // Cosmetics sec
 cosmetics.addEventListener("click", () => {
-    cosmetics.style.color = "green"
+    cosmetics.style.color = "gold"
     anime.style.color = "black"
     snacks.style.color = "black"
     native.style.color = "black"
@@ -76,7 +76,7 @@ cosmetics.addEventListener("click", () => {
 
 // native sec
 native.addEventListener("click", () => {
-    native.style.color = "green"
+    native.style.color = "gold"
     anime.style.color = "black"
     snacks.style.color = "black"
     cosmetics.style.color = "black"
@@ -103,10 +103,11 @@ native.addEventListener("click", () => {
 snacks.addEventListener("click", () => {
     native.style.color = "black"
     anime.style.color = "black"
-    snacks.style.color = "green"
+    snacks.style.color = "gold"
     cosmetics.style.color = "black"
     all.style.color = "black"    
     imageSec.classList.add("img")
+    snacks.classList.toggle("text-amber-200")
  
     imageSec.innerHTML = ""
     let snack = images.filter((el) => {
@@ -128,7 +129,7 @@ snacks.addEventListener("click", () => {
 function anim() {
     anime.addEventListener("click", () => {
         cosmetics.style.color = "black"
-        anime.style.color = "green"
+        anime.style.color = "gold"
         snacks.style.color = "black"
         native.style.color = "black"
         all.style.color = "black"

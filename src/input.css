@@ -15,13 +15,16 @@
         @apply grid grid-cols-4 w-[90%] mt-8 items-center justify-center mx-auto 
     }
     .ace{
-        @apply border border-3 hover:shadow hover:opacity-95 hover:scale-[90%] border-amber-300
+        @apply border cursor-pointer border-3 hover:shadow hover:opacity-95 hover:scale-[90%] border-amber-300
     }
     .placeholder{
         @apply text-center justify-center mx-auto
     }
     .test{
         @apply transition-transform duration-150 ease-linear active:scale-95 object-cover
+    }
+    .color{
+        @apply text-amber-500
     }
 }
     /* break points for medium screens */
