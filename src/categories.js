@@ -16,13 +16,17 @@ let allImage = images.filter((el) => {
 imageSec.innerHTML =""
 allImage.map((el) => {
     imageSec.classList.add("img")
-    let image = document.createElement("img") 
-        imageSec.appendChild(image)
+    let image = document.createElement("img")
+        let a = document.createElement("a")
+        a.appendChild(image)
+        imageSec.appendChild(a)
+        a.href = el.link
         image.src = el.src
-        image.classList.add("button")
         image.classList.add("ace")
+        image.classList.add("button")
         image.classList.add("test")
-        image.classList.add("size-[70%]")
+         image.classList.add("size-[70%]")
+         a.classList.add("size-[100%]")
 })
 
 // all sec
@@ -39,13 +43,17 @@ all.addEventListener("click", () => {
         return el
     })
     allsec.forEach((el) => {
-        let image = document.createElement("img") 
-        imageSec.appendChild(image)
+        let image = document.createElement("img")
+        let a = document.createElement("a")
+        a.appendChild(image)
+        imageSec.appendChild(a)
+        a.href = el.link
         image.src = el.src
         image.classList.add("ace")
         image.classList.add("button")
         image.classList.add("test")
          image.classList.add("size-[70%]")
+         a.classList.add("size-[100%]")
      })
 })
 
@@ -64,13 +72,17 @@ cosmetics.addEventListener("click", () => {
        return el.category === "cosmetics"
     })
     cosmetic.forEach((el) => {
-        let image = document.createElement("img") 
-        imageSec.appendChild(image)
+        let image = document.createElement("img")
+        let a = document.createElement("a")
+        a.appendChild(image)
+        imageSec.appendChild(a)
+        a.href = el.link
         image.src = el.src
-        image.classList.add("button")
         image.classList.add("ace")
+        image.classList.add("button")
         image.classList.add("test")
-        image.classList.add("size-[70%]")
+         image.classList.add("size-[70%]")
+         a.classList.add("size-[100%]")
      })
 })
 
@@ -89,13 +101,17 @@ native.addEventListener("click", () => {
        return el.category === "Native"
     })
     nativeSec.forEach((el) => {
-        let image = document.createElement("img") 
-        imageSec.appendChild(image)
+        let image = document.createElement("img")
+        let a = document.createElement("a")
+        a.appendChild(image)
+        imageSec.appendChild(a)
+        a.href = el.link
         image.src = el.src
         image.classList.add("ace")
-        image.classList.add("size-[70%]")
-        image.classList.add("test")
         image.classList.add("button")
+        image.classList.add("test")
+         image.classList.add("size-[70%]")
+         a.classList.add("size-[100%]")
      })  
 })
 
@@ -115,14 +131,18 @@ snacks.addEventListener("click", () => {
        return el.category === "snack"
     })
     snack.forEach((el) => {
-        let image = document.createElement("img") 
-        imageSec.appendChild(image)
+        let image = document.createElement("img")
+        let a = document.createElement("a")
+        a.appendChild(image)
+        imageSec.appendChild(a)
+        a.href = el.link
         image.src = el.src
-        image.classList.add("button")
         image.classList.add("ace")
-        image.classList.add("size-[80%]")
+        image.classList.add("button")
         image.classList.add("test")
-     })
+         image.classList.add("size-[70%]")
+         a.classList.add("size-[100%]")
+     }).join('')
 })
 
 // Anime
@@ -140,13 +160,17 @@ function anim() {
            return el.category === "Anime"
         })
         animes.forEach((el) => {
-            let image = document.createElement("img") 
-            imageSec.appendChild(image)
-            image.src = el.src
-            image.classList.add("button")
-            image.classList.add("size-[70%]")
-            image.classList.add("test")
-            image.classList.add("ace")
+        let image = document.createElement("img")
+        let a = document.createElement("a")
+        a.appendChild(image)
+        imageSec.appendChild(a)
+        a.href = el.link
+        image.src = el.src
+        image.classList.add("ace")
+        image.classList.add("button")
+        image.classList.add("test")
+         image.classList.add("size-[70%]")
+         a.classList.add("size-[100%]")
          })
     })
 }

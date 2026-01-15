@@ -1,13 +1,21 @@
 const images = [
     // ANIME
     {
-         src: "./images/anime/cap.jpg", id: 1, category:"Anime",alt:"Anime cap",price:"2000"
+        src: "./images/anime/cap.jpg", id: 1,
+        category: "Anime", alt: "Anime cap", price: "2000",
+        link: "https://wa.me/2348149657894?text=Welcome%20to%20Teesmart%20visual%20where%20you%20get%20anime%20mech%20customisation%20for%20cheap%20price.%20The%20cap%20you%20selected%20is%20%E2%82%A65000%20just%20send%20me%20a%20pic%20of%20the%20design%20you%20like",
     }, {
-         src: "./images/anime/cap2.jpg", id: 1, category:"Anime",alt:"Anime cap",price:"2000"
+        src: "./images/anime/cap2.jpg", id: 1,
+        category: "Anime", alt: "Anime cap", price: "2000",
+        link:"https://wa.me/2348149657894?text=Welcome%20to%20Teesmart%20visual%20where%20you%20get%20anime%20mech%20customisation%20for%20cheap%20price.%20The%20cap%20you%20selected%20is%20%E2%82%A65000%20just%20send%20me%20a%20pic%20of%20the%20design%20you%20like",
     }, {
-         src: "./images/anime/luffycap.jpg", id: 1, category:"Anime",alt:"Luffy cap",price:"2000"
+        src: "./images/anime/luffycap.jpg", id: 1,
+        category: "Anime", alt: "Luffy cap", price: "2000",
+        link:"https://wa.me/2348149657894?text=Welcome%20to%20Teesmart%20visual%20where%20you%20get%20anime%20mech%20customisation%20for%20cheap%20price.%20The%20cap%20you%20selected%20is%20%E2%82%A65000%20just%20send%20me%20a%20pic%20of%20the%20design%20you%20like",
     },{
-         src: "./images/anime/sasukecap.jpg", id: 1, category:"Anime",alt:"Sasuke cap",price:"2000"
+        src: "./images/anime/sasukecap.jpg", id: 1,
+        category: "Anime", alt: "Sasuke cap", price: "2000",
+        link:"https://wa.me/2348149657894?text=Welcome%20to%20Teesmart%20visual%20where%20you%20get%20anime%20mech%20customisation%20for%20cheap%20price.%20The%20cap%20you%20selected%20is%20%E2%82%A65000%20just%20send%20me%20a%20pic%20of%20the%20design%20you%20like",
     },{
          src: "./images/anime/gojoframe.jpg", id: 1, category:"Anime",alt:"Gojo frame",price:"2000"
     },{
@@ -40,21 +48,30 @@ const images = [
      },
      // snacks
      {
-         src: "./images/snack/cake.jpg", id: 1, category:"snack",alt:"Snacks",price:"2000"
+         src: "./images/snack/cake.jpg", id: 1,
+         category: "snack", alt: "Snacks", price: "2000"
      },{
-         src: "./images/snack/doughnut.jpg", id: 1, category:"snack",alt:"Snacks",price:"2000"
+         src: "./images/snack/doughnut.jpg", id: 1,
+         category: "snack", alt: "Snacks", price: "2000"
      },{
-         src: "./images/snack/meatpie.jpg", id: 1, category:"snack",alt:"Snacks",price:"2000"
+         src: "./images/snack/meatpie.jpg", id: 1,
+         category: "snack", alt: "Snacks", price: "2000"
      },{
-         src: "./images/snack/meatpie1.jpg", id: 1, category:"snack",alt:"Snacks",price:"2000"
+         src: "./images/snack/meatpie1.jpg", id: 1,
+         category: "snack", alt: "Snacks", price: "2000"
      },{
-         src: "./images/snack/milkydoughnut.jpg", id: 1, category:"snack",alt:"Snacks",price:"2000"
+         src: "./images/snack/milkydoughnut.jpg", id: 1,
+         category: "snack", alt: "Snacks", price: "2000"
      },{
-         src: "./images/snack/waffle.jpg", id: 1, category:"snack",alt:"Snacks",price:"2000"
+         src: "./images/snack/waffle.jpg", id: 1,
+         category: "snack", alt: "Snacks", price: "2000"
      },{
-         src: "./images/snack/waffle1.jpg", id: 1, category:"snack",alt:"Snacks",price:"2000"
+         src: "./images/snack/waffle1.jpg", id: 1,
+         category: "snack", alt: "Snacks", price: "2000"
      },{
-         src: "./images/snack/puff.jpg", id: 1, category:"snack",alt:"Snacks",price:"2000",link:"https://www.google.com/search?q=https://wa.me/2348140182558%3Ftext%3Dhello%2520i%2520am%2520nobody%2520lets%2520chat"
+         src: "./images/snack/puff.jpg", id: 1,
+         category: "snack", alt: "Snacks", price: "2000",
+         link: "https://wa.me/2348140182558%3Ftext%3Dhello%2520i%2520am%2520nobody%2520lets%2520chat"
      },
 
 

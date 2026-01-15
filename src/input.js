@@ -88,12 +88,17 @@ giftBtn.addEventListener("click", () => {
     })
         
     men.forEach((el) => {
-        let image = document.createElement("img") 
-        imageSec.appendChild(image)
+        let image = document.createElement("img")
+        let a = document.createElement("a")
+        a.appendChild(image)
+        imageSec.appendChild(a)
+        a.href = el.link
         image.src = el.src
-        image.classList.add("test")
         image.classList.add("ace")
-        image.classList.add("size-[70%]")
+        image.classList.add("button")
+        image.classList.add("test")
+         image.classList.add("size-[70%]")
+         a.classList.add("size-[100%]")
      })
     }
     // female adult and birthday
@@ -113,13 +118,17 @@ giftBtn.addEventListener("click", () => {
     })
         
     women.forEach((el) => {
-        let image = document.createElement("img") 
-        imageSec.appendChild(image)
+        let image = document.createElement("img")
+        let a = document.createElement("a")
+        a.appendChild(image)
+        imageSec.appendChild(a)
+        a.href = el.link
         image.src = el.src
         image.classList.add("ace")
-        image.classList.add("size-[70%]")
-        image.classList.add("test")
         image.classList.add("button")
+        image.classList.add("test")
+         image.classList.add("size-[70%]")
+         a.classList.add("size-[100%]")
         
      })       
     }
@@ -134,11 +143,16 @@ input.addEventListener("input", (el) => {
     return console.log(inputVal === el.alt);
     })
     inp.forEach((el) => {
-        let image = document.createElement("img") 
-        imageSec.appendChild(image)
+        let image = document.createElement("img")
+        let a = document.createElement("a")
+        a.appendChild(image)
+        imageSec.appendChild(a)
+        a.href = el.link
         image.src = el.src
-        image.classList.add("test")
-        image.classList.add("size-[70%]")
         image.classList.add("ace")
+        image.classList.add("button")
+        image.classList.add("test")
+         image.classList.add("size-[70%]")
+         a.classList.add("size-[100%]")
      })
 })
