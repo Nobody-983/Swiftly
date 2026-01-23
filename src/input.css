@@ -26,6 +26,9 @@
     .color{
         @apply text-amber-500
     }
+    .butt{
+        @apply w-[30%] rounded-2xl border
+    }
 }
     /* break points for medium screens */
 

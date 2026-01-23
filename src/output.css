@@ -235,33 +235,20 @@
   .table {
     display: table;
   }
-  .size-\[0\%\] {
-    width: 0%;
-    height: 0%;
-  }
-  .size-\[10\%\] {
-    width: 10%;
-    height: 10%;
-  }
-  .size-\[50\%\] {
-    width: 50%;
-    height: 50%;
-  }
-  .size-\[60\%\] {
-    width: 60%;
-    height: 60%;
-  }
   .size-\[70\%\] {
     width: 70%;
     height: 70%;
   }
-  .size-\[80\%\] {
-    width: 80%;
-    height: 80%;
+  .size-\[90\%\] {
+    width: 90%;
+    height: 90%;
   }
   .size-\[100\%\] {
     width: 100%;
     height: 100%;
+  }
+  .w-\[20\%\] {
+    width: 20%;
   }
   .w-\[30\%\] {
     width: 30%;
@@ -292,9 +279,6 @@
   }
   .justify-center {
     justify-content: center;
-  }
-  .gap-4 {
-    gap: calc(var(--spacing) * 4);
   }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
@@ -490,6 +474,16 @@
       margin-left: calc(var(--spacing) * 40);
     }
   }
+  .md\:w-\[0\%\] {
+    @media (width >= 500px) {
+      width: 0%;
+    }
+  }
+  .md\:w-\[30\%\] {
+    @media (width >= 500px) {
+      width: 30%;
+    }
+  }
   .md\:w-\[40\%\] {
     @media (width >= 500px) {
       width: 40%;
@@ -510,6 +504,16 @@
       justify-content: center;
     }
   }
+  .md\:gap-3 {
+    @media (width >= 500px) {
+      gap: calc(var(--spacing) * 3);
+    }
+  }
+  .md\:gap-4 {
+    @media (width >= 500px) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
   .md\:gap-6 {
     @media (width >= 500px) {
       gap: calc(var(--spacing) * 6);
@@ -518,6 +522,21 @@
   .md\:text-center {
     @media (width >= 500px) {
       text-align: center;
+    }
+  }
+  .lg\:w-\[30\%\] {
+    @media (width >= 1360px) {
+      width: 30%;
+    }
+  }
+  .lg\:w-\[40\%\] {
+    @media (width >= 1360px) {
+      width: 40%;
+    }
+  }
+  .lg\:w-\[50\%\] {
+    @media (width >= 1360px) {
+      width: 50%;
     }
   }
 }
@@ -594,6 +613,12 @@
   }
   .color {
     color: var(--color-amber-500);
+  }
+  .butt {
+    width: 30%;
+    border-radius: var(--radius-2xl);
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
 }
 @property --tw-rotate-x {
