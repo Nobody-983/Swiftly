@@ -63,11 +63,11 @@ anniversary.addEventListener("click", () => {
 })
 
 // random
-random.addEventListener("click", () => {
-    random.style.color = "gold"
-    anniversary.style.color = "black"
-    birthday.style.color = "black"
-})
+// random.addEventListener("click", () => {
+//     random.style.color = "gold"
+//     anniversary.style.color = "black"
+//     birthday.style.color = "black"
+// })
 
 // gift picker
 giftBtn.addEventListener("click", () => {
