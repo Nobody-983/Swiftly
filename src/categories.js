@@ -6,6 +6,9 @@ let cosmetics = document.getElementById("cosmetics")
 let snacks = document.getElementById("snacks")
 let anime = document.getElementById("anime") 
 let all = document.getElementById("all")    
+let womenShoes = document.getElementById("women")    
+let bags = document.getElementById("bags")    
+let menShoes = document.getElementById("men")    
 
 
 // all category
@@ -36,6 +39,9 @@ all.addEventListener("click", () => {
     snacks.style.color = "black"
     native.style.color = "black"
     all.style.color = "gold"
+    menShoes.style.color = "black"
+    bags.style.color = "black"
+    womenShoes.style.color = "black"
     imageSec.classList.add("img")
     
     imageSec.innerHTML = ""
@@ -61,6 +67,9 @@ all.addEventListener("click", () => {
 // Cosmetics sec
 cosmetics.addEventListener("click", () => {
     cosmetics.style.color = "gold"
+    menShoes.style.color = "black"
+    bags.style.color = "black"
+    womenShoes.style.color = "black"
     anime.style.color = "black"
     snacks.style.color = "black"
     native.style.color = "black"
@@ -89,6 +98,9 @@ cosmetics.addEventListener("click", () => {
 // native sec
 native.addEventListener("click", () => {
     native.style.color = "gold"
+    menShoes.style.color = "black"
+    bags.style.color = "black"
+    womenShoes.style.color = "black"
     anime.style.color = "black"
     snacks.style.color = "black"
     cosmetics.style.color = "black"
@@ -115,9 +127,45 @@ native.addEventListener("click", () => {
      })  
 })
 
+// Women shoes
+womenShoes.addEventListener("click", () => {
+    native.style.color = "black"
+    anime.style.color = "black"
+    menShoes.style.color = "black"
+    bags.style.color = "black"
+    womenShoes.style.color = "gold"
+    cosmetics.style.color = "black"
+    snacks.style.color = "black"
+    all.style.color = "black"    
+    imageSec.classList.add("img")
+    womenShoes.classList.toggle("text-amber-200")
+ 
+    imageSec.innerHTML = ""
+    let heels = images.filter((el) => {
+        
+       return el.category === "Heels"
+    })
+    heels.forEach((el) => {
+        let image = document.createElement("img")
+        let a = document.createElement("a")
+        a.appendChild(image)
+        imageSec.appendChild(a)
+        a.href = el.link
+        image.src = el.src
+        image.classList.add("ace")
+        image.classList.add("button")
+        image.classList.add("test")
+         image.classList.add("size-[70%]")
+         a.classList.add("size-[100%]")
+     }).join('')
+})
+
 // snacks
 snacks.addEventListener("click", () => {
     native.style.color = "black"
+    menShoes.style.color = "black"
+    bags.style.color = "black"
+    womenShoes.style.color = "black"
     anime.style.color = "black"
     snacks.style.color = "gold"
     cosmetics.style.color = "black"
@@ -145,11 +193,79 @@ snacks.addEventListener("click", () => {
      }).join('')
 })
 
+
+// bags
+bags.addEventListener("click", () => {
+    bags.style.color = "gold"
+    menShoes.style.color = "black"
+    womenShoes.style.color = "black"
+    anime.style.color = "black"
+    snacks.style.color = "black"
+    native.style.color = "black"
+    cosmetics.style.color = "black"
+    all.style.color = "black"
+    imageSec.classList.add("img")
+
+ 
+    imageSec.innerHTML = ""
+    let bag = images.filter((el) => {  
+       return el.category === "Bags"
+    })
+    bag.forEach((el) => {
+        let image = document.createElement("img")
+        let a = document.createElement("a")
+        a.appendChild(image)
+        imageSec.appendChild(a)
+        a.href = el.link
+        image.src = el.src
+        image.classList.add("ace")
+        image.classList.add("button")
+        image.classList.add("test")
+         image.classList.add("size-[70%]")
+         a.classList.add("size-[100%]")
+     })  
+})
+
+// men shoes
+menShoes.addEventListener("click", () => {
+    menShoes.style.color = "gold"
+    bags.style.color = "black"
+    womenShoes.style.color = "black"
+    anime.style.color = "black"
+    snacks.style.color = "black"
+    native.style.color = "black"
+    cosmetics.style.color = "black"
+    all.style.color = "black"
+    imageSec.classList.add("img")
+
+ 
+    imageSec.innerHTML = ""
+    let men = images.filter((el) => {  
+       return el.category === "men shoes"
+    })
+    men.forEach((el) => {
+        let image = document.createElement("img")
+        let a = document.createElement("a")
+        a.appendChild(image)
+        imageSec.appendChild(a)
+        a.href = el.link
+        image.src = el.src
+        image.classList.add("ace")
+        image.classList.add("button")
+        image.classList.add("test")
+         image.classList.add("size-[70%]")
+         a.classList.add("size-[100%]")
+     })  
+})
+
 // Anime
 function anim() {
     anime.addEventListener("click", () => {
         cosmetics.style.color = "black"
         anime.style.color = "gold"
+        menShoes.style.color = "black"
+        bags.style.color = "black"
+        womenShoes.style.color = "black"
         snacks.style.color = "black"
         native.style.color = "black"
         all.style.color = "black"
