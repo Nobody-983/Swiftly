@@ -13,8 +13,7 @@ let female = document.getElementById("female")
 let adult = document.getElementById("adult")
 let child = document.getElementById("child")
 let birthday = document.getElementById("birthday")
-let random = document.getElementById("random")
-let anniversary = document.getElementById("anniversary")
+
 let gift = document.getElementById("gift")
 let giftBtn = document.getElementById("giftbtn")
 
@@ -41,40 +40,23 @@ adult.addEventListener("click", () => {
     adult.style.color = "gold"
     child.style.color = "black"
 })
-
-// child color
 child.addEventListener("click", () => {
     child.style.color = "gold"
     adult.style.color = "black"
 })
 
-// birthday color
-birthday.addEventListener("click", () => {
-    birthday.style.color = "gold"
-    anniversary.style.color = "black"
-    random.style.color = "black"
-})
 
-// anniversary color
-anniversary.addEventListener("click", () => {
-    anniversary.style.color = "gold"
-    birthday.style.color = "black"
-    random.style.color = "black"
-})
 
-// random
-// random.addEventListener("click", () => {
-//     random.style.color = "gold"
-//     anniversary.style.color = "black"
-//     birthday.style.color = "black"
-// })
+
+
+
 
 // gift picker
 giftBtn.addEventListener("click", () => {
     // male adult and birthday
     if (male.style.color === "gold"
         && adult.style.color === "gold"
-        && birthday.style.color === "gold")
+        )
     {
         imageSec.innerHTML = ""
         all.style.color = "black"
@@ -84,7 +66,7 @@ giftBtn.addEventListener("click", () => {
         native.style.color = "black"
     
     let men = images.filter((el) => {
-       return el.category === "Anime" || el.category==="Native"
+       return el.category === "Anime" || el.category==="Native" || el.category === "men shoes"
     })
         
     men.forEach((el) => {
@@ -101,10 +83,10 @@ giftBtn.addEventListener("click", () => {
          a.classList.add("size-[100%]")
      })
     }
-    // female adult and birthday
+    // female adult 
     if (female.style.color === "gold"
         && adult.style.color === "gold"
-        && birthday.style.color === "gold")
+        )
     {
         imageSec.innerHTML = ""
         all.style.color = "black"
@@ -114,7 +96,7 @@ giftBtn.addEventListener("click", () => {
         native.style.color = "black"
     
     let women = images.filter((el) => {
-       return el.category === "cosmetics" || el.category==="snack"
+       return el.category === "cosmetics" || el.category==="snack" || el.category === "Bags" || el.category === "Heels"
     })
         
     women.forEach((el) => {

@@ -24,12 +24,18 @@ allImage.map((el) => {
         a.appendChild(image)
         imageSec.appendChild(a)
         a.href = el.link
-        image.src = el.src
+    image.src = el.src
+    imageSec.appendChild(a)
+            let p = document.createElement("p")
+            p.textContent = el.name
+            p.style.color = "brown"
+        p.classList.add("name")
+            a.appendChild(p)
         image.classList.add("ace")
         image.classList.add("button")
         image.classList.add("test")
          image.classList.add("size-[70%]")
-         a.classList.add("size-[100%]")
+    a.classList.add("size-[100%]")
 })
 
 // all sec
@@ -55,6 +61,12 @@ all.addEventListener("click", () => {
         imageSec.appendChild(a)
         a.href = el.link
         image.src = el.src
+        imageSec.appendChild(a)
+            let p = document.createElement("p")
+            p.textContent = el.name
+        p.classList.add("name")
+            p.style.color = "brown"
+            a.appendChild(p)
         image.classList.add("ace")
         image.classList.add("button")
         image.classList.add("test")
@@ -78,7 +90,7 @@ cosmetics.addEventListener("click", () => {
     
     imageSec.innerHTML = ""
     let cosmetic = images.filter((el) => {
-       return el.category === "cosmetics"
+       return el.category === "Cosmetics"
     })
     cosmetic.forEach((el) => {
         let image = document.createElement("img")
@@ -87,6 +99,12 @@ cosmetics.addEventListener("click", () => {
         imageSec.appendChild(a)
         a.href = el.link
         image.src = el.src
+        imageSec.appendChild(a)
+            let p = document.createElement("p")
+            p.textContent = el.name
+            p.style.color = "brown"
+        p.classList.add("name")
+            a.appendChild(p)
         image.classList.add("ace")
         image.classList.add("button")
         image.classList.add("test")
@@ -119,6 +137,12 @@ native.addEventListener("click", () => {
         imageSec.appendChild(a)
         a.href = el.link
         image.src = el.src
+        imageSec.appendChild(a)
+            let p = document.createElement("p")
+            p.textContent = el.name
+            p.style.color = "brown"
+        p.classList.add("name")
+            a.appendChild(p)
         image.classList.add("ace")
         image.classList.add("button")
         image.classList.add("test")
@@ -152,6 +176,12 @@ womenShoes.addEventListener("click", () => {
         imageSec.appendChild(a)
         a.href = el.link
         image.src = el.src
+        imageSec.appendChild(a)
+            let p = document.createElement("p")
+            p.textContent = el.name
+        p.classList.add("name")
+        a.appendChild(p)
+            p.style.color = "brown"
         image.classList.add("ace")
         image.classList.add("button")
         image.classList.add("test")
@@ -176,7 +206,7 @@ snacks.addEventListener("click", () => {
     imageSec.innerHTML = ""
     let snack = images.filter((el) => {
         
-       return el.category === "snack"
+       return el.category === "Snacks"
     })
     snack.forEach((el) => {
         let image = document.createElement("img")
@@ -185,6 +215,12 @@ snacks.addEventListener("click", () => {
         imageSec.appendChild(a)
         a.href = el.link
         image.src = el.src
+        imageSec.appendChild(a)
+            let p = document.createElement("p")
+            p.textContent = el.name
+        p.classList.add("name")
+        a.appendChild(p)
+            p.style.color = "brown"
         image.classList.add("ace")
         image.classList.add("button")
         image.classList.add("test")
@@ -218,6 +254,12 @@ bags.addEventListener("click", () => {
         imageSec.appendChild(a)
         a.href = el.link
         image.src = el.src
+        imageSec.appendChild(a)
+            let p = document.createElement("p")
+            p.textContent = el.name
+        p.classList.add("name")
+        a.appendChild(p)
+            p.style.color = "brown"
         image.classList.add("ace")
         image.classList.add("button")
         image.classList.add("test")
@@ -241,13 +283,19 @@ menShoes.addEventListener("click", () => {
  
     imageSec.innerHTML = ""
     let men = images.filter((el) => {  
-       return el.category === "men shoes"
+       return el.category === "Men Shoes"
     })
     men.forEach((el) => {
         let image = document.createElement("img")
         let a = document.createElement("a")
         a.appendChild(image)
         imageSec.appendChild(a)
+        imageSec.appendChild(a)
+            let p = document.createElement("p")
+        p.textContent = el.name
+            p.style.color = "brown"
+        p.classList.add("name")
+            a.appendChild(p)
         a.href = el.link
         image.src = el.src
         image.classList.add("ace")
@@ -279,7 +327,12 @@ function anim() {
         let image = document.createElement("img")
         let a = document.createElement("a")
         a.appendChild(image)
-        imageSec.appendChild(a)
+            imageSec.appendChild(a)
+            let p = document.createElement("p")
+            p.textContent = el.name
+            p.style.color = "brown"
+            a.appendChild(p)
+        p.classList.add("name")
         a.href = el.link
         image.src = el.src
         image.classList.add("ace")

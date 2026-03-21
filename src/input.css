@@ -12,7 +12,7 @@
     }
     /* image sec */
     .img{
-        @apply grid grid-cols-4 w-[90%] mt-8 items-center justify-center mx-auto 
+        @apply grid sm:grid-cols-3 md:grid-cols-4 w-[90%] mt-8 items-center justify-center mx-auto 
     }
     .ace{
         @apply border cursor-pointer border-3 hover:shadow hover:opacity-95 hover:scale-[90%] border-amber-300
@@ -28,6 +28,9 @@
     }
     .butt{
         @apply w-[30%] rounded-2xl border
+    }
+    .name{
+        @apply md:text-amber-300 lg:mb-2 md:bg-amber-600 md:w-[70%] mt-1.5  md:text-center sm:ml-1 
     }
 }
     /* break points for medium screens */

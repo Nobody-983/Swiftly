@@ -264,9 +264,6 @@
   .w-\[70\%\] {
     width: 70%;
   }
-  .w-\[90\%\] {
-    width: 90%;
-  }
   .w-\[120\%\] {
     width: 120%;
   }
@@ -451,24 +448,9 @@
       transition-duration: var(--tw-duration, var(--default-transition-duration));
     }
   }
-  .sm\:ml-4 {
-    @media (width >= 300px) {
-      margin-left: calc(var(--spacing) * 4);
-    }
-  }
-  .sm\:gap-2 {
-    @media (width >= 300px) {
-      gap: calc(var(--spacing) * 2);
-    }
-  }
   .sm\:gap-4 {
     @media (width >= 300px) {
       gap: calc(var(--spacing) * 4);
-    }
-  }
-  .md\:mx-auto {
-    @media (width >= 500px) {
-      margin-inline: auto;
     }
   }
   .md\:mr-2 {
@@ -479,11 +461,6 @@
   .md\:ml-2 {
     @media (width >= 500px) {
       margin-left: calc(var(--spacing) * 2);
-    }
-  }
-  .md\:ml-40 {
-    @media (width >= 500px) {
-      margin-left: calc(var(--spacing) * 40);
     }
   }
   .md\:h-8 {
@@ -506,29 +483,14 @@
       width: 40%;
     }
   }
-  .md\:w-\[50\%\] {
-    @media (width >= 500px) {
-      width: 50%;
-    }
-  }
   .md\:w-\[60\%\] {
     @media (width >= 500px) {
       width: 60%;
     }
   }
-  .md\:justify-center {
-    @media (width >= 500px) {
-      justify-content: center;
-    }
-  }
   .md\:gap-3 {
     @media (width >= 500px) {
       gap: calc(var(--spacing) * 3);
-    }
-  }
-  .md\:gap-6 {
-    @media (width >= 500px) {
-      gap: calc(var(--spacing) * 6);
     }
   }
   .md\:text-center {
@@ -581,9 +543,14 @@
     margin-top: calc(var(--spacing) * 8);
     display: grid;
     width: 90%;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
     align-items: center;
     justify-content: center;
+    @media (width >= 300px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    @media (width >= 500px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
   }
   .ace {
     cursor: pointer;
@@ -637,6 +604,27 @@
     border-radius: var(--radius-2xl);
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .name {
+    margin-top: calc(var(--spacing) * 1.5);
+    @media (width >= 300px) {
+      margin-left: calc(var(--spacing) * 1);
+    }
+    @media (width >= 500px) {
+      width: 70%;
+    }
+    @media (width >= 500px) {
+      background-color: var(--color-amber-600);
+    }
+    @media (width >= 500px) {
+      text-align: center;
+    }
+    @media (width >= 500px) {
+      color: var(--color-amber-300);
+    }
+    @media (width >= 1360px) {
+      margin-bottom: calc(var(--spacing) * 2);
+    }
   }
 }
 @property --tw-border-style {
