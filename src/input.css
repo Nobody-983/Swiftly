@@ -30,7 +30,7 @@
         @apply w-[30%] rounded-2xl border
     }
     .name{
-        @apply md:text-amber-300 lg:mb-2 md:bg-amber-600 md:w-[70%] mt-1.5  md:text-center sm:ml-1 
+        @apply md:text-amber-300 lg:mb-2 md:bg-amber-600 md:w-[70%] mt-1.5  md:text-center sm:ml-1 lg:w-[70%]
     }
 }
     /* break points for medium screens */
