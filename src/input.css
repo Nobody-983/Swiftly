@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 
 @layer components{
     .dark{
@@ -8,7 +9,7 @@
         @apply border border-2 
     }
     .container{
-     @apply  mt-8 mx-auto bg-amber-100 min-w-[90%] 
+     @apply  mt-8 mx-auto  min-w-[90%] rounded-2xl
     }
     /* image sec */
     .img{
@@ -32,11 +33,17 @@
     .name{
         @apply md:text-amber-300 lg:mb-2 md:bg-amber-600 md:w-[70%] mt-1.5  md:text-center sm:ml-1 lg:w-[70%]
     }
+    
 }
     /* break points for medium screens */
 
 
 @theme {
+    /* 2. Register your fonts here (v4 style) */
+  --font-display: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+
+  
   /* This overwrites or adds to your breakpoints */
   --breakpoint-sm: 300px;
   --breakpoint-md: 500px;
