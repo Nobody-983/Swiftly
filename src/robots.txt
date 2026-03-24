@@ -2,3 +2,8 @@ User-agent: *
 Allow: /
 
 Sitemap: https://swiftly-rho.vercel.app/sitemap.xml
+
+User-agent: *
+Allow: /
+
+Sitemap: https://swiftlyweb.shop/sitemap.xml

@@ -6,7 +6,7 @@ requestAnimationFrame(() => {
     anim()
 })
 // input sec
-let input = document.getElementById("input")
+// let input = document.getElementById("input")
 // gift
 let male = document.getElementById("male")
 let female = document.getElementById("female")
@@ -117,24 +117,24 @@ giftBtn.addEventListener("click", () => {
 })
 
 // Filter
-input.addEventListener("input", (el) => {
-    let inputVal = input.value
-    console.log(inputVal);
-    imageSec.innerHTML = ""
-    let inp = images.filter((el) => {    
-    return console.log(inputVal === el.alt);
-    })
-    inp.forEach((el) => {
-        let image = document.createElement("img")
-        let a = document.createElement("a")
-        a.appendChild(image)
-        imageSec.appendChild(a)
-        a.href = el.link
-        image.src = el.src
-        image.classList.add("ace")
-        image.classList.add("button")
-        image.classList.add("test")
-         image.classList.add("size-[70%]")
-         a.classList.add("size-[100%]")
-     })
-})
+// input.addEventListener("input", (el) => {
+//     let inputVal = input.value
+//     console.log(inputVal);
+//     imageSec.innerHTML = ""
+//     let inp = images.filter((el) => {    
+//     return console.log(inputVal === el.alt);
+//     })
+//     inp.forEach((el) => {
+//         let image = document.createElement("img")
+//         let a = document.createElement("a")
+//         a.appendChild(image)
+//         imageSec.appendChild(a)
+//         a.href = el.link
+//         image.src = el.src
+//         image.classList.add("ace")
+//         image.classList.add("button")
+//         image.classList.add("test")
+//          image.classList.add("size-[70%]")
+//          a.classList.add("size-[100%]")
+//      })
+// })
