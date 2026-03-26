@@ -736,6 +736,7 @@
     }
   }
   .cat {
+    margin: calc(var(--spacing) * 1);
     cursor: pointer;
     border-radius: var(--radius-2xl);
     background-color: var(--color-gray-200);

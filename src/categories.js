@@ -8,13 +8,14 @@ let anime = document.getElementById("anime")
 let all = document.getElementById("all")    
 let womenShoes = document.getElementById("women")    
 let bags = document.getElementById("bags")    
-let menShoes = document.getElementById("men")    
+let menShoes = document.getElementById("men") 
+let perfume = document.getElementById("perfume")   
 
 
 // all category
     all.style.color = "gold"
 let allImage = images.filter((el) => {
-    return el.src
+    return el.featured === "all"
 })
 imageSec.innerHTML =""
 allImage.map((el) => {
@@ -48,11 +49,12 @@ all.addEventListener("click", () => {
     menShoes.style.color = "black"
     bags.style.color = "black"
     womenShoes.style.color = "black"
+    perfume.style.color = "black"
     imageSec.classList.add("img")
     
     imageSec.innerHTML = ""
     let allsec = images.filter((el) => {
-        return el
+        return el.featured === "all"
     })
     allsec.forEach((el) => {
         let image = document.createElement("img")
@@ -85,6 +87,7 @@ cosmetics.addEventListener("click", () => {
     anime.style.color = "black"
     snacks.style.color = "black"
     native.style.color = "black"
+    perfume.style.color = "black"
     all.style.color = "black"
     imageSec.classList.add("img")
     
@@ -120,6 +123,7 @@ native.addEventListener("click", () => {
     bags.style.color = "black"
     womenShoes.style.color = "black"
     anime.style.color = "black"
+    perfume.style.color = "black"
     snacks.style.color = "black"
     cosmetics.style.color = "black"
     all.style.color = "black"
@@ -154,6 +158,7 @@ native.addEventListener("click", () => {
 // Women shoes
 womenShoes.addEventListener("click", () => {
     native.style.color = "black"
+    perfume.style.color = "black"
     anime.style.color = "black"
     menShoes.style.color = "black"
     bags.style.color = "black"
@@ -194,6 +199,7 @@ womenShoes.addEventListener("click", () => {
 snacks.addEventListener("click", () => {
     native.style.color = "black"
     menShoes.style.color = "black"
+    perfume.style.color = "black"
     bags.style.color = "black"
     womenShoes.style.color = "black"
     anime.style.color = "black"
@@ -232,6 +238,7 @@ snacks.addEventListener("click", () => {
 
 // bags
 bags.addEventListener("click", () => {
+    perfume.style.color = "black"
     bags.style.color = "gold"
     menShoes.style.color = "black"
     womenShoes.style.color = "black"
@@ -275,6 +282,7 @@ menShoes.addEventListener("click", () => {
     womenShoes.style.color = "black"
     anime.style.color = "black"
     snacks.style.color = "black"
+    perfume.style.color = "black"
     native.style.color = "black"
     cosmetics.style.color = "black"
     all.style.color = "black"
@@ -305,11 +313,51 @@ menShoes.addEventListener("click", () => {
          a.classList.add("size-[100%]")
      })  
 })
+// perfume
+perfume.addEventListener("click", () => {
+    perfume.style.color = "gold"
+    menShoes.style.color = "black"
+    bags.style.color = "black"
+    womenShoes.style.color = "black"
+    anime.style.color = "black"
+    snacks.style.color = "black"
+    native.style.color = "black"
+    cosmetics.style.color = "black"
+    all.style.color = "black"
+    imageSec.classList.add("img")
+
+ 
+    imageSec.innerHTML = ""
+    let perf = images.filter((el) => {  
+       return el.category === "perfume"
+    })
+    perf.forEach((el) => {
+        let image = document.createElement("img")
+        let a = document.createElement("a")
+        a.appendChild(image)
+        imageSec.appendChild(a)
+        imageSec.appendChild(a)
+            let p = document.createElement("p")
+        p.textContent = el.name
+            p.style.color = "brown"
+        p.classList.add("name")
+            a.appendChild(p)
+        a.href = el.link
+        image.src = el.src
+        image.classList.add("ace")
+        image.classList.add("button")
+        image.classList.add("test")
+         image.classList.add("size-[70%]")
+         a.classList.add("size-[100%]")
+     })  
+})
+
 
 // Anime
 function anim() {
     anime.addEventListener("click", () => {
         cosmetics.style.color = "black"
+    perfume.style.color = "black"
         anime.style.color = "gold"
         menShoes.style.color = "black"
         bags.style.color = "black"

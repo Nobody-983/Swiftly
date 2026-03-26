@@ -32,11 +32,11 @@
     }
     .name{
         @apply md:text-amber-300 lg:mb-2 md:bg-[#F9F5F0] 
-        md:rounded-xl md:justify-center
+        md:rounded-xl md:justify-center 
         md:w-[67%] mt-1.5  md:text-center sm:ml-1 lg:w-[70%]
     }
     .cat{
-        @apply rounded-2xl cursor-pointer p-2 hover:bg-[#F9F5F0] bg-gray-200
+        @apply rounded-2xl cursor-pointer p-2 m-1 hover:bg-[#F9F5F0] bg-gray-200
     }
     
 }
